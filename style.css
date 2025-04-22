@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    background-size: cover;
+    z-index: 0;
+}
+
+h1 {
+    font-size: 1em;
+    color: white;
+}
+
+#date {
+    display: block;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    margin: 10px 0;
+    text-align: left;
+    padding: 0 10px;
+    z-index: 1;
+}
+
+#temp {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(83, 82, 82, 0.292);
+    padding: 20px;
+    width: 90%;
+    max-width: 250px;
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    z-index: 1;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.search input {
+    width: 100%;
+    padding: 10px 15px;
+    margin-right: 5px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: rgb(67, 67, 67);
+}
+
+.search button {
+    background-color: white;
+    border: none;
+    border-radius: 100%;
+    padding: 10px 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search img {
+    max-height: 15px;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather img {
+    width: 100%;
+    max-width: 100px;
+}
+
+.details {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.details div {
+    margin: 0 auto;
+}
+
+.details img {
+    width: 100%;
+    max-width: 20px;
+    margin: 0 10px;
+}
+
+.details .value {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+}
+
+.col p {
+    font-size: 10px;
+}
+
+.col div {
+    display: flex;
+    flex-direction: column;
+}
